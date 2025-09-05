@@ -16,9 +16,9 @@ function App() {
         background:'#fff7e6',
         padding: '28px 0 8px 0',
         boxShadow:'0 2px 12px #0001'
-        }}>
+      }}>
         <img 
-          src="/images/images/img1.jpg"   
+          src="/images/img1.jpg"  // Corrected image path here
           alt="BJRI Solar Energy Logo"
           style={{
             height: '80px',
@@ -34,31 +34,31 @@ function App() {
       <ImageSlider />
 
       {/* Main Section Bands */}
-      <div className="section-band" style={{ background:'#e9ded3', padding:'40px 0'}}>
+      <div id="home" className="section-band" style={{ background:'#e9ded3', padding:'40px 0'}}>
         <div className="content-block" style={{maxWidth:'1000px', margin:'0 auto'}}>
           <Home />
         </div>
       </div>
 
-      <div className="section-band" style={{background:'#fffbe7', padding:'36px 0'}}>
+      <div id="services" className="section-band" style={{background:'#fffbe7', padding:'36px 0'}}>
         <div className="content-block" style={{maxWidth:'1000px', margin:'0 auto'}}>
           <Services />
         </div>
       </div>
 
-      <div className="section-band" style={{background:'#f5e4c3',padding:'36px 0'}}>
+      <div id="pricing" className="section-band" style={{background:'#f5e4c3',padding:'36px 0'}}>
         <div className="content-block" style={{maxWidth:'1000px', margin:'0 auto'}}>
           <Pricing />
         </div>
       </div>
 
-      <div className="section-band" style={{background:'#e0f7fa',padding:'36px 0'}}>
+      <div id="partners" className="section-band" style={{background:'#e0f7fa',padding:'36px 0'}}>
         <div className="content-block" style={{maxWidth:'1000px', margin:'0 auto'}}>
           <Partners />
         </div>
       </div>
 
-      <div className="contact-section" style={{
+      <div id="contact" className="contact-section" style={{
         background:'#d7c4a3', 
         color:'#2c160b',
         padding: '28px 32px',

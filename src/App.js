@@ -6,6 +6,7 @@ import Pricing from './components/Pricing';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
 import ImageSlider from './components/ImageSlider'; 
+import bjr from './assets/images/img1.png';
 
 function App() {
   return (
@@ -17,18 +18,17 @@ function App() {
         padding: '28px 0 8px 0',
         boxShadow:'0 2px 12px #0001'
       }}>
-        <img 
-          src="/images/img1.jpg"  // Corrected image path here
-          alt="BJRI Solar Energy Logo"
-          style={{
-            height: '80px',
-            marginBottom: '12px'
-          }}
-        />
+        <img
+                  src={bjr}
+                  width="5%"
+                  height="2%"
+                  loading="lazy"
+                />
         <h1 style={{color:'#c47a29', margin:'0', fontSize:'2.3rem', letterSpacing:'2px'}}>
           BJRI Solar Energy Systems
         </h1>
       </div>
+       
       
       {/* Image Slider */}
       <ImageSlider />

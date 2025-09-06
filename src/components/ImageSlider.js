@@ -1,14 +1,16 @@
+import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-const images = [
-  './assets/images/img1.png',
-  './assets/images/img2.png',
-  './assets/images/img3.png',
-  './assets/images/img4.png',
-  './assets/images/file_example_JPG_100kB.png'
-];
+// Import images from assets folder
+import img1 from '../assets/images/bjr-solar-logo.png';
+import img2 from '../assets/images/bjr-solar-logo1.png';
+import img3 from '../assets/images/bjr-solar-logo2.png';
+import img5 from '../assets/images/bjr-solar-logo3.png';
+import img4 from '../assets/images/bjr-solar-logo4.png';
+
+const images = [img1, img2, img3, img4, img5];
 
 function ImageSlider() {
   const settings = {
@@ -18,23 +20,27 @@ function ImageSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3500
+    autoplaySpeed: 3500,
   };
 
   return (
-    <div style={{ maxWidth: '1000px', margin: '40px auto', borderRadius:'20px' }}>
+    <div style={{ maxWidth: '1100px', margin: 'auto', paddingTop: '70px' }}>
       <Slider {...settings}>
         {images.map((src, idx) => (
           <div key={idx}>
             <img 
               src={src} 
-              alt={`slide-${idx+1}`} 
-              style={{ width: '100%', height: '420px', objectFit: 'cover', borderRadius: '16px', boxShadow:'0 4px 24px #0002' }} 
-              onError={e => { e.target.onerror = null; e.target.src = '/assets/images/img1.png'; }}
+              alt={`slide-${idx + 1}`} 
+              style={{ width: '100%', height: '420px', objectFit: 'cover', borderRadius: '16px' }}
+              loading="lazy"
             />
           </div>
         ))}
       </Slider>
+      <div className="hero-text" style={{ padding: '20px 0', textAlign: 'center' }}>
+        <h1>BJRI Solar Energy Systems</h1>
+        <p>Switch to solar power and save up to 80% on your electricity bill. Your reliable partner for renewable energy solutions!</p>
+      </div>
     </div>
   );
 }

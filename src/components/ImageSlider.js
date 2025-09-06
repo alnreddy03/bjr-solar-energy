@@ -7,7 +7,8 @@ const images = [
   '/images/img1.jpg',
   '/images/img2.jpg',
   '/images/img3.jpg',
-  '/images/img4.jpg'
+  '/images/img4.jpg',
+  '/images/file_example_JPG_100kB.jpg'
 ];
 
 function ImageSlider() {
@@ -30,6 +31,7 @@ function ImageSlider() {
               src={src} 
               alt={`slide-${idx+1}`} 
               style={{ width: '100%', height: '420px', objectFit: 'cover', borderRadius: '16px', boxShadow:'0 4px 24px #0002' }} 
+              onError={e => { e.target.onerror = null; e.target.src = '/images/img1.jpg'; }}
             />
           </div>
         ))}

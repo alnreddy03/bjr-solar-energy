@@ -5,7 +5,7 @@ import Services from './components/Services';
 import Pricing from './components/Pricing';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
-import ImageSlider from './components/ImageSlider'; // We'll use the slider as suggested
+import ImageSlider from './components/ImageSlider'; 
 
 function App() {
   return (
@@ -69,6 +69,57 @@ function App() {
         fontSize: '1.17rem'
       }}>
         <Contact />
+        <a
+  href="https://wa.me/918886092333"
+  className="whatsapp_float"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    width: "60px",
+    height: "60px",
+    bottom: "40px",
+    right: "40px",
+    backgroundColor: "#25d366",
+    color: "#FFF",
+    borderRadius: "50px",
+    textAlign: "center",
+    fontSize: "30px",
+    boxShadow: "2px 2px 3px #999",
+    zIndex: 100,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }}
+>
+  <i className="fa fa-whatsapp"></i>
+</a>
+<a
+  href="https://wa.me/918886092333?text=Hello%2C%20I%20have%20a%20question%20about%20your%20portfolio."
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    width: "60px",
+    height: "60px",
+    bottom: "110px",
+    right: "40px",
+    backgroundColor: "#444",
+    color: "#FFF",
+    borderRadius: "50px",
+    textAlign: "center",
+    fontSize: "30px",
+    boxShadow: "2px 2px 3px #999",
+    zIndex: 100,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }}
+>
+  <i className="fa fa-comment"></i>
+</a>
+
+
       </div>
     </div>
   );

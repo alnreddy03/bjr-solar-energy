@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bjr-solar-energy/static/css/main.3e737739.css",
-    "main.js": "/bjr-solar-energy/static/js/main.9b7af843.js",
+    "main.js": "/bjr-solar-energy/static/js/main.f72bcc20.js",
     "static/js/453.8c1f3683.chunk.js": "/bjr-solar-energy/static/js/453.8c1f3683.chunk.js",
     "static/media/bjr-solar-logo.png": "/bjr-solar-energy/static/media/bjr-solar-logo.e99c2364f5515980df12.png",
     "static/media/bjr-solar-logo1.png": "/bjr-solar-energy/static/media/bjr-solar-logo1.e99c2364f5515980df12.png",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/bjr-solar-energy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bjr-solar-energy/index.html",
     "main.3e737739.css.map": "/bjr-solar-energy/static/css/main.3e737739.css.map",
-    "main.9b7af843.js.map": "/bjr-solar-energy/static/js/main.9b7af843.js.map",
+    "main.f72bcc20.js.map": "/bjr-solar-energy/static/js/main.f72bcc20.js.map",
     "453.8c1f3683.chunk.js.map": "/bjr-solar-energy/static/js/453.8c1f3683.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e737739.css",
-    "static/js/main.9b7af843.js"
+    "static/js/main.f72bcc20.js"
   ]
 }

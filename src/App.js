@@ -4,7 +4,7 @@ import ImageSlider from './components/ImageSlider';
 import WhyChooseUs from './components/WhyChooseUs';
 import CustomerSegments from './components/CustomerSegments';
 import StepsProcess from './components/StepsProcess';
-import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import SocialFloat from './components/SocialFloat';
@@ -29,8 +29,8 @@ function App() {
       <section id="steps" className="color-band green">
         <StepsProcess />
       </section>
-      <section id="testimonials" className="color-band blue">
-        <Testimonials />
+      <section id="contact" className="color-band blue">
+        <Contact />
       </section>
       <section id="faq" className="color-band green">
         <FAQ />

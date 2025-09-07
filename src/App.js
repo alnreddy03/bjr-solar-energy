@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import ImageSlider from './components/ImageSlider';
 import WhyChooseUs from './components/WhyChooseUs';
+import Pricing from './components/Pricing';
 import CustomerSegments from './components/CustomerSegments';
 import StepsProcess from './components/StepsProcess';
 import Contact from './components/Contact';
@@ -20,25 +21,28 @@ function App() {
       <Navbar onQuoteClick={() => setShowQuote(true)} />
       <QuoteModal show={showQuote} onClose={() => setShowQuote(false)} />
 
-      <section id="home" style={{ paddingTop: '0px' }}>
+      <section id="home">
         <ImageSlider />
       </section>
-      <section id="whyus" className="color-band white" style={{ paddingTop: '0px' }}>
+      <section id="whyus" className="color-band white">
         <WhyChooseUs />
-      </section>     
-      <section id="segments" className="color-band blue" style={{ paddingTop: '0px' }}>
+      </section>  
+      <section id="pricing" className="color-band lightgreen">
+        <Pricing />
+      </section>   
+      <section id="segments" className="color-band blue">
         <CustomerSegments />
       </section>
-      <section id="steps" className="color-band green" style={{ padding: '5px' }}>
+      <section id="steps" className="color-band green"  >
         <StepsProcess />
       </section>
-       <section id="brands" className="color-band blue" style={{ paddingTop: '0px' }}>
+       <section id="brands" className="color-band blue">
         <Brands />
       </section>
-      <section id="contact" className="color-band blue" style={{ paddingTop: '0px' }}>
+      <section id="contact" className="color-band blue">
         <Contact />
       </section>
-      <section id="faq" className="color-band lightgreen" style={{ paddingTop: '0px' }}>
+      <section id="faq" className="color-band lightgreen">
         <FAQ />
       </section>
       <Footer />

@@ -1,32 +1,222 @@
-body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f6f2; }
-.navbar { position:fixed; width:100%; top:0; left:0; background:#1a1a1a; color:#fff; z-index:100; display:flex; justify-content:space-between; align-items:center; padding:0 40px; height: 60px;}
-.nav-links { list-style:none; display:flex; gap:26px; margin:0; }
-.nav-links li a { color:#fff; text-decoration:none; font-weight:bold; font-size:17px;}
-.nav-links li a:hover { color:#7bc043; }
-
-.color-band { padding: 40px 0; }
-.white { background: #fff; }
-.blue { background: #22609f; color:#fff; }
-.green { background: #b2df68; } 
-.lightgreen { background: #b9c199; }
-
-.cards-grid { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin:20px 0;}
-.feature-card { background:#fff; border-radius:12px; padding:20px; min-width:185px; box-shadow:0 2px 8px #0003; text-align:center; margin-top: 20px; }
-.icon { font-size:30px; margin-bottom:10px;}
-.segments-grid { display:flex; justify-content:center; gap:50px; margin:30px 0;}
-.segment img { border-radius:10px; width:240px; height:150px; object-fit:cover; }
-.steps-process { display:flex; justify-content:center; gap:40px; margin:20px 0;}
-.step { background:#fff; padding:18px 32px; border-radius:18px; box-shadow:0 2px 8px #0002;}
-.testimonials { display:flex; gap:30px; justify-content:center; margin:30px 0;}
-.testimonials blockquote { background:#fff; padding:20px; border-radius:10px; font-style:italic; box-shadow:0 2px 8px #0002;}
-.faqs h4 { cursor:pointer; background:#eee; margin:0; padding:10px; border-radius:8px;}
-.faqs p { margin:6px 0 16px 0;}
-.footer { background:#1a1a1a; color:#fff; text-align:center; padding:28px 0; margin-top:40px; }
-
-@media (max-width:900px) {
-  .nav-links { gap:12px; }
-  .segments-grid { flex-direction:column; align-items:center;}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f7f6f2;
 }
+
+/* Navbar base styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 2rem;
+  background: #3d3b3b;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.13);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f5efef;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #d5bebe;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.25s;
+}
+
+.nav-links li a:hover {
+  color: #7bc043;
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 26px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.menu-toggle .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #444;
+  border-radius: 2px;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Animate bars when open */
+.menu-toggle .bar.change:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-toggle .bar.change:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle .bar.change:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: calc(100vh - 60px);
+    width: 240px;
+    background-color: #fff;
+    padding-top: 2rem;
+    gap: 20px;
+    margin-right: 0;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0);
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Other layout and UI elements */
+.color-band {
+  padding: 40px 0;
+}
+
+.white {
+  background: #fff;
+}
+
+.blue {
+  background: #22609f;
+  color: #fff;
+}
+
+.green {
+  background: #b2df68;
+}
+
+.lightgreen {
+  background: #b9c199;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 185px;
+  box-shadow: 0 2px 8px #0003;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.segments-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.segment img {
+  border-radius: 10px;
+  width: 240px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.steps-process {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.step {
+  background: #fff;
+  padding: 18px 32px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.testimonials {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.testimonials blockquote {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.faqs h4 {
+  cursor: pointer;
+  background: #eee;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.faqs p {
+  margin: 6px 0 16px 0;
+}
+
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 28px 0;
+  margin-top: 40px;
+}
+
 .quote-btn {
   background: skyblue;
   border: 2px solid skyblue;
@@ -39,40 +229,72 @@ body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f6f
   font-size: 16px;
   transition: background 0.2s;
 }
+
 .quote-btn:hover {
   background: #87c13e;
 }
 
 .modal-backdrop {
   position: fixed;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(0,0,0,0.45);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
   z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .modal-content {
-  background:#fff;
-  border-radius:15px;
-  padding:40px 34px 24px 34px;
-  min-width:310px;
-  max-width:350px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px 34px 24px 34px;
+  min-width: 310px;
+  max-width: 350px;
   position: relative;
   box-shadow: 0 2px 16px #0004;
 }
+
 .close-btn {
   position: absolute;
-  top:13px; right:20px;
-  background:none; border:none; font-size:28px; color:#999; cursor:pointer;
+  top: 13px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
 }
-input, select {
-  padding:8px; border-radius:6px; border:1.5px solid #b6d94b; font-size:15px;
+
+input,
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1.5px solid #b6d94b;
+  font-size: 15px;
 }
-input:focus, select:focus { outline:2px solid #b6d94b; }
+
+input:focus,
+select:focus {
+  outline: 2px solid #b6d94b;
+}
 
 .brands-section img {
   filter: drop-shadow(0 1px 4px #0001);
   background: #f7f7f7;
   border-radius: 6px;
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .segments-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }

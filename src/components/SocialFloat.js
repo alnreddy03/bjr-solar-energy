@@ -29,7 +29,6 @@ function SocialFloat({ onQuoteClick }) {
           <i className="fa fa-whatsapp"></i>
         </span>
       </a>
-
       <a
         href="https://instagram.com/YOUR_INSTAGRAM"
         target="_blank"
@@ -56,7 +55,6 @@ function SocialFloat({ onQuoteClick }) {
           <i className="fa fa-instagram"></i>
         </span>
       </a>
-
       <button
         className="quote-btn"
         onClick={onQuoteClick}

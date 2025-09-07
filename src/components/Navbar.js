@@ -15,7 +15,7 @@ const Navbar = () => {
         />
         BJRI Solar Energy Systems
       </span>
-      <ul className="nav-links">
+      <ul className="nav-links" style={{ marginRight:"100px" } }>
         <li><a href="#home">Home</a></li>
         <li><a href="#whyus">Why Us</a></li>
         <li><a href="#segments">Segments</a></li>

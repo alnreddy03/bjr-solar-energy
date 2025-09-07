@@ -6,7 +6,8 @@ const faqs = [
 function FAQ() {
   const [openIdx, setOpenIdx] = useState(-1);
   return (
-    <div className="faqs">
+    <div className="faqs"  >
+      <h2 style={{ margin: '0px', padding:'5px'  }}>Frequently Asked Questions</h2>
       {faqs.map((faq, i) => (
         <div key={i}>
           <h4 onClick={() => setOpenIdx(openIdx === i ? -1 : i)}>{faq.q}</h4>

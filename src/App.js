@@ -8,35 +8,41 @@ import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import SocialFloat from './components/SocialFloat';
-import './App.css';
 import QuoteModal from './components/QuoteModal';
+import './App.css';
+import Brands from './components/Brands';
 
 function App() {
-   const [showQuote, setShowQuote] = useState(false);
+  const [showQuote, setShowQuote] = useState(false);
+
   return (
     <div>
-       <Navbar onQuoteClick={() => setShowQuote(true)} />
+      <Navbar onQuoteClick={() => setShowQuote(true)} />
       <QuoteModal show={showQuote} onClose={() => setShowQuote(false)} />
-      <section id="home">
+
+      <section id="home" style={{ paddingTop: '0px' }}>
         <ImageSlider />
       </section>
-      <section id="whyus" className="color-band white">
+      <section id="whyus" className="color-band white" style={{ paddingTop: '0px' }}>
         <WhyChooseUs />
-      </section>
-      <section id="segments" className="color-band blue">
+      </section>     
+      <section id="segments" className="color-band blue" style={{ paddingTop: '0px' }}>
         <CustomerSegments />
       </section>
-      <section id="steps" className="color-band green">
+      <section id="steps" className="color-band green" style={{ padding: '5px' }}>
         <StepsProcess />
       </section>
-      <section id="contact" className="color-band blue">
+       <section id="brands" className="color-band blue" style={{ paddingTop: '0px' }}>
+        <Brands />
+      </section>
+      <section id="contact" className="color-band blue" style={{ paddingTop: '0px' }}>
         <Contact />
       </section>
-      <section id="faq" className="color-band green">
+      <section id="faq" className="color-band green" style={{ paddingTop: '0px' }}>
         <FAQ />
       </section>
       <Footer />
-      <SocialFloat />
+      <SocialFloat onQuoteClick={() => setShowQuote(true)} />
     </div>
   );
 }

@@ -69,3 +69,9 @@ input, select {
   padding:8px; border-radius:6px; border:1.5px solid #b6d94b; font-size:15px;
 }
 input:focus, select:focus { outline:2px solid #b6d94b; }
+
+.brands-section img {
+  filter: drop-shadow(0 1px 4px #0001);
+  background: #f7f7f7;
+  border-radius: 6px;
+}

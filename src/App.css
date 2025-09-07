@@ -7,7 +7,8 @@ body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f6f
 .color-band { padding: 40px 0; }
 .white { background: #fff; }
 .blue { background: #22609f; color:#fff; }
-.green { background: #b2df68; }
+.green { background: #b2df68; } 
+.lightgreen { background: #b9c199; }
 
 .cards-grid { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin:20px 0;}
 .feature-card { background:#fff; border-radius:12px; padding:20px; min-width:185px; box-shadow:0 2px 8px #0003; text-align:center; margin-top: 20px; }

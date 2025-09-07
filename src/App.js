@@ -38,7 +38,7 @@ function App() {
       <section id="contact" className="color-band blue" style={{ paddingTop: '0px' }}>
         <Contact />
       </section>
-      <section id="faq" className="color-band green" style={{ paddingTop: '0px' }}>
+      <section id="faq" className="color-band lightgreen" style={{ paddingTop: '0px' }}>
         <FAQ />
       </section>
       <Footer />

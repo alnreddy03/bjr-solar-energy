@@ -11,7 +11,7 @@ body {
   align-items: center;
   padding: 12px 2rem;
   background: #3d3b3b;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.13);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.13);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -90,7 +90,7 @@ body {
     padding-top: 2rem;
     gap: 20px;
     margin-right: 0;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
@@ -168,18 +168,18 @@ body {
   object-fit: cover;
 }
 
-.steps-process {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 20px 0;
-}
+@media (max-width: 600px) {
+  .steps-process {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 12px;
+    /* smaller padding on mobile */
+  }
 
-.step {
-  background: #fff;
-  padding: 18px 32px;
-  border-radius: 18px;
-  box-shadow: 0 2px 8px #0002;
+  .step {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .testimonials {

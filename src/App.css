@@ -10,7 +10,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f6f
 .green { background: #b2df68; }
 
 .cards-grid { display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin:20px 0;}
-.feature-card { background:#fff; border-radius:12px; padding:20px; min-width:185px; box-shadow:0 2px 8px #0003; text-align:center; }
+.feature-card { background:#fff; border-radius:12px; padding:20px; min-width:185px; box-shadow:0 2px 8px #0003; text-align:center; margin-top: 20px; }
 .icon { font-size:30px; margin-bottom:10px;}
 .segments-grid { display:flex; justify-content:center; gap:50px; margin:30px 0;}
 .segment img { border-radius:10px; width:240px; height:150px; object-fit:cover; }

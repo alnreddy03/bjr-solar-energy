@@ -1,7 +1,7 @@
 export const contactInfo = {
   manager: "B. Balaram Reddy",
   address: "D.NO.14-2 Subhash Road, Kamlanagar, Anantapur (Dist.), Andhra Pradesh - 5155001",
-  phone: ["+91 9652726568", "+91 8886092333"],
+  phone: ["+91 9550555379", "+91 8886092333", "+91 9652726568"],
   email: "bjrsolarenergy@gmail.com"
 };
 

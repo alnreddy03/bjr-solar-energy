@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <span className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <img src={bjr} alt="BJRI Solar Logo" width="36" height="36" style={{objectFit:'contain'}} loading="lazy" />
-        BJRI Solar Energy Systems
+        <img src={bjr} alt="BJR Solar Logo" width="36" height="36" style={{objectFit:'contain'}} loading="lazy" />
+        BJR Solar Energy Systems
       </span>
       <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
         <div className={`bar ${menuOpen ? 'change' : ''}`}></div>

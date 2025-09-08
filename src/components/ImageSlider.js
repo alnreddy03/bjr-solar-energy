@@ -38,7 +38,7 @@ function ImageSlider() {
         ))}
       </Slider>
       <div className="hero-text" style={{ padding: '20px 0', textAlign: 'center' }}>
-        <h1>BJRI Solar Energy Systems</h1>
+        <h1>BJR Solar Energy Systems</h1>
         <p>Switch to solar power and save up to 80% on your electricity bill. Your reliable partner for renewable energy solutions!</p>
       </div>
     </div>

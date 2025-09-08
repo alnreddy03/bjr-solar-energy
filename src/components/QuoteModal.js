@@ -49,7 +49,7 @@ Interested in Finance: ${formData.finance}
     <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <button className="close-btn" onClick={onClose}>&times;</button>
-        <h2>Connect With Us To Go Solar</h2>
+        <h2>Start Your Solar Journey With Us</h2>
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
           <input type="text" name="fullName" placeholder="Full Name *" value={formData.fullName} onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email Address *" value={formData.email} onChange={handleChange} required />
